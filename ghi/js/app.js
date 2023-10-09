@@ -23,6 +23,9 @@ window.addEventListener('DOMContentLoaded', async () => {
 
         if (!response.ok) {
             console.error("Failed to fetch conference data")
+            const errorSection = document.getElementById('errorSection')
+            errorSection.textContent = "Error: Failed to fetch conference data"
+            errorSection.style.display = 'block'
         } else {
             const data = await response.json()
 
@@ -46,6 +49,9 @@ window.addEventListener('DOMContentLoaded', async () => {
         }
     } catch (e) {
         console.error("Failed to fetch conference details")
+        const errorSection = document.getElementById('errorSection')
+        errorSection.textContent = "Error: Failed to fetch conference details"
+        errorSection.style.display = 'block'
     }
 
 });

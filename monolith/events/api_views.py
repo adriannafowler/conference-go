@@ -9,8 +9,11 @@ from .models import Conference, Location, State
 
 class LocationListEncoder(ModelEncoder):
     model = Location
-    properties = ["name",
-                  "picture_url",]
+    properties = [
+        "name",
+        "picture_url",
+        "id",
+        ]
 
 
 class LocationDetailEncoder(ModelEncoder):
@@ -22,6 +25,7 @@ class LocationDetailEncoder(ModelEncoder):
         "created",
         "updated",
         "picture_url",
+        "id",
     ]
 
     def get_extra_data(self, o):

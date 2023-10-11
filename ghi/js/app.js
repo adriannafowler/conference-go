@@ -1,6 +1,6 @@
 function createCard(title, description, pictureUrl, starts, ends, name) {
     return `
-    <div class="col" style="margin: 1em;">
+    <div class"card">
         <div class="card shadow p-3 mb-5 bg-white rounded" style="margin-right: 1em; margin-left: 1em;">
             <img src="${pictureUrl}" class="card-img-top">
             <div class="card-body">

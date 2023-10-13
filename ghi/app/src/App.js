@@ -6,6 +6,7 @@ import LocationForm from './LocationForm';
 import ConferenceForm from './ConferenceForm';
 import AttendConferenceForm from './AttendConferenceForm';
 import PresentationForm from './PresentationForm';
+import MainPage from './MainPage';
 
 
 
@@ -36,6 +37,7 @@ function App() {
       <>
         <Nav />
         <Routes>
+          <Route index element={<MainPage />} />
           <Route path="/presentations/new" element={<PresentationForm/>}/>
           <Route path="/locations/new" element={<LocationForm/>}/>
           <Route path="/attendees" element={<AttendeesList attendees={attendees}/>}/>

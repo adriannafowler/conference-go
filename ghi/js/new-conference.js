@@ -1,5 +1,3 @@
-console.log("!!!!!!")
-
 window.addEventListener('DOMContentLoaded', async () => {
     console.log('DOM content fully loaded and parsed')
 

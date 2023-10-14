@@ -29,6 +29,7 @@ function AttendConferenceForm() {
         data.name = name;
         data.email = email;
 
+
         const attendeeUrl = 'http://localhost:8001/api/attendees/';
         const fetchOptions = {
         method: 'post',
@@ -37,6 +38,7 @@ function AttendConferenceForm() {
             'Content-Type': 'application/json',
         },
         };
+        console.log(data)
         const attendeeResponse = await fetch(attendeeUrl, fetchOptions);
         if (attendeeResponse.ok) {
         setConference('');

@@ -11,19 +11,19 @@ function Nav() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink className="nav-link" to="/">Home</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/locations/new">New location</NavLink>
+                    <NavLink className="nav-link" to="/locations/new">New location</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="conferences/new">New conference</NavLink>
+                    <NavLink className="nav-link" to="conferences/new">New conference</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="presentations/new">New presentation</NavLink>
+                    <NavLink className="nav-link" to="presentations/new">New presentation</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="attendees/new">Attend conference</NavLink>
+                    <NavLink className="nav-link" to="attendees/new">Attend conference</NavLink>
                 </li>
                 </ul>
             </div>

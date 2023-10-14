@@ -69,7 +69,6 @@ def api_list_attendees(request, conference_vo_id=None):
             )
     else:
         content = json.loads(request.body)
-        print(content)
 
         # Get the Conference object and put it in the content dict
         try:

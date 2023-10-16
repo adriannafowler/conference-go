@@ -38,7 +38,6 @@ function AttendConferenceForm() {
             'Content-Type': 'application/json',
         },
         };
-        console.log(data)
         const attendeeResponse = await fetch(attendeeUrl, fetchOptions);
         if (attendeeResponse.ok) {
         setConference('');

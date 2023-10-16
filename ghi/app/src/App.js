@@ -11,7 +11,6 @@ import MainPage from './MainPage';
 
 
 function App() {
-  // console.log('props.attendees:', props.attendees)
 
   const [attendees, setAttendees] = useState([]);
 
@@ -32,7 +31,6 @@ function App() {
   if (attendees === undefined) {
     return null
     }
-    console.log("!!!!!!!!")
     return (
       <>
         <Nav />

@@ -25,9 +25,6 @@ function ConferenceForm( ) {
         data.max_attendees = maxAttendees
         data.location = location
 
-        console.log(data)
-        console.log('location id:', location.id)
-
         const conferenceUrl = 'http://localhost:8000/api/conferences/';
         const fetchConfig = {
             method: "post",
@@ -40,7 +37,6 @@ function ConferenceForm( ) {
         const response = await fetch(conferenceUrl, fetchConfig);
         if (response.ok) {
             const newConference = await response.json();
-            console.log(newConference);
             setName('')
             setStarts('')
             setEnds('')
@@ -82,7 +78,6 @@ function ConferenceForm( ) {
     }
     const handleLocationChange = (event) => {
         const value = event.target.value
-        console.log('value', value)
         setLocation(value)
     }
 
